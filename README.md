@@ -134,16 +134,6 @@ npm run dev
 
 ---
 
-## 🌐 Deployment
-
-You can deploy the project using:
-
-* Render (Backend)
-* Vercel (Frontend)
-* Railway
-
----
-
 ## 📌 Future Improvements
 
 * Message notifications
