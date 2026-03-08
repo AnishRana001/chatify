@@ -1,4 +1,4 @@
-# 💬 Chatify – Real-Time Chat Application
+<img width="1149" height="801" alt="Screenshot 2026-03-08 105120" src="https://github.com/user-attachments/assets/7039ab2f-e0f0-40cb-9643-50231b81290d" /># 💬 Chatify – Real-Time Chat Application
 
 Chatify is a **full-stack real-time chat application** built using the **MERN stack (MongoDB, Express, React, Node.js)** with **Socket.IO** for instant messaging.
 It allows users to communicate in real time, track online users, and share messages seamlessly.
@@ -141,15 +141,23 @@ http://localhost:5173
 
 ## 📸 Screenshots
 
-*(Add screenshots of your chat UI here)*
 
-Example:
+🔐 Login Page
+<img src="screenshots/login.png" alt="Login Page" width="900"/>
 
-* Login Page
-* Chat Interface
-* Online Users List
+Users can securely log in to access the chat application.
 
----
+💬 Chat Interface
+<img src="screenshots/chat.png" alt="Chat Interface" width="900"/>
+
+The chat interface allows users to send and receive messages in real time with a clean and responsive UI.
+
+📂 Chat List / Contacts
+<img src="screenshots/sidebar.png" alt="Contacts Sidebar" width="900"/>
+
+Users can view available contacts and open conversations from the sidebar.
+
+
 
 ## 📌 Future Improvements
 
