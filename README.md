@@ -1,20 +1,21 @@
-<img width="1149" height="801" alt="Screenshot 2026-03-08 105120" src="https://github.com/user-attachments/assets/7039ab2f-e0f0-40cb-9643-50231b81290d" /># 💬 Chatify – Real-Time Chat Application
+# 💬 Real-Time Chat Application
 
-Chatify is a **full-stack real-time chat application** built using the **MERN stack (MongoDB, Express, React, Node.js)** with **Socket.IO** for instant messaging.
-It allows users to communicate in real time, track online users, and share messages seamlessly.
+A modern **Real-Time Chat Application** built using the **MERN Stack**.
+This application allows users to authenticate securely, chat with contacts instantly, and see messages in real time using **WebSockets**.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 **User Authentication** (JWT + Cookies)
-* 💬 **Real-Time Messaging** using Socket.IO
-* 🟢 **Online User Tracking**
-* 📷 **Image Sharing in Chats**
-* 🔔 **Notification Sound for New Messages**
-* ⚡ **Optimistic UI Updates**
-* 🎨 **Modern UI built with React**
-* ☁️ **Image Upload using Cloudinary**
+* 🔐 User Authentication (Signup / Login)
+* 💬 Real-time messaging
+* 🟢 Online / Offline user status
+* 📩 Instant message delivery
+* 🧑‍🤝‍🧑 Contact list sidebar
+* ⏱ Message timestamps
+* 🖼 Image sharing support
+* 📱 Fully responsive UI
+* ⚡ Fast and smooth user experience
 
 ---
 
@@ -22,19 +23,26 @@ It allows users to communicate in real time, track online users, and share messa
 
 ### Frontend
 
-* React
-* Zustand (State Management)
+* React.js
+* Tailwind CSS
+* Zustand
 * Axios
-* TailwindCSS
-* Socket.IO Client
 
 ### Backend
 
 * Node.js
 * Express.js
+
+### Database
+
 * MongoDB
+
+### Real-time Communication
+
 * Socket.IO
-* JWT Authentication
+
+### Cloud Storage
+
 * Cloudinary
 
 ---
@@ -42,64 +50,65 @@ It allows users to communicate in real time, track online users, and share messa
 ## 📂 Project Structure
 
 ```
-chatify
+chat-app
 │
 ├── backend
 │   ├── controllers
+│   ├── models
 │   ├── routes
 │   ├── middleware
-│   ├── models
-│   └── lib
+│   └── server.js
 │
 ├── frontend
-│   ├── components
-│   ├── pages
-│   ├── store
-│   └── lib
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── store
+│   │   └── App.jsx
 │
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Clone the repository
 
-```bash
-git clone https://github.com/AnishRana001/chatify.git
-cd chatify
+```
+git clone https://github.com/your-username/chat-app.git
+cd chat-app
 ```
 
 ---
 
-### 2️⃣ Install Backend Dependencies
+### 2️⃣ Install backend dependencies
 
-```bash
+```
 cd backend
 npm install
 ```
 
 ---
 
-### 3️⃣ Install Frontend Dependencies
+### 3️⃣ Install frontend dependencies
 
-```bash
-cd frontend
+```
+cd ../frontend
 npm install
 ```
 
 ---
 
-## 🔑 Environment Variables
+### 4️⃣ Create Environment Variables
 
-Create a `.env` file inside the **backend** folder and add:
+Create a `.env` file inside the **backend** folder.
 
 ```
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-CLIENT_URL=http://localhost:5173
+
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
@@ -107,64 +116,41 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ---
 
-## ▶️ Run the Application
+### 5️⃣ Run the Application
 
-### Start Backend
+Run backend server:
 
-```bash
+```
 cd backend
 npm run dev
 ```
 
-Backend runs on:
+Run frontend:
 
 ```
-http://localhost:3000
-```
-
----
-
-### Start Frontend
-
-```bash
 cd frontend
 npm run dev
 ```
 
-Frontend runs on:
+---
 
-```
-http://localhost:5173
-```
+## 🌐 Deployment
+
+You can deploy the project using:
+
+* Render (Backend)
+* Vercel (Frontend)
+* Railway
 
 ---
 
-## 📸 Screenshots
-
-
-🔐 Login Page
-<img src="screenshots/login.png" alt="Login Page" width="900"/>
-
-Users can securely log in to access the chat application.
-
-💬 Chat Interface
-<img src="screenshots/chat.png" alt="Chat Interface" width="900"/>
-
-The chat interface allows users to send and receive messages in real time with a clean and responsive UI.
-
-📂 Chat List / Contacts
-<img src="screenshots/sidebar.png" alt="Contacts Sidebar" width="900"/>
-
-Users can view available contacts and open conversations from the sidebar.
-
-
-
 ## 📌 Future Improvements
 
-* Typing indicator ("User is typing...")
-* Message read / delivered status
-* File sharing support
-* Mobile responsive improvements
+* Message notifications
+* Group chat
+* Voice/video calling
+* Message reactions
+* Message deletion/editing
 
 ---
 
@@ -172,11 +158,6 @@ Users can view available contacts and open conversations from the sidebar.
 
 **Anish Rana**
 
-GitHub:
-https://github.com/AnishRana001
-
 ---
 
-## ⭐ Support
-
-If you like this project, consider giving it a **star ⭐ on GitHub**.
+⭐ If you like this project, please give it a star on GitHub!
